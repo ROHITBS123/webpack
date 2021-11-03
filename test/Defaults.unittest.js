@@ -93,11 +93,11 @@ Object {
   "experiments": Object {
     "asset": false,
     "asyncWebAssembly": false,
-    "buildHttp": false,
+    "buildHttp": undefined,
     "cacheUnaffected": false,
     "futureDefaults": false,
     "layers": false,
-    "lazyCompilation": false,
+    "lazyCompilation": undefined,
     "outputModule": false,
     "syncWebAssembly": false,
     "topLevelAwait": false,
@@ -217,7 +217,7 @@ Object {
         "exprContextRecursive": true,
         "exprContextRegExp": false,
         "exprContextRequest": ".",
-        "strictExportPresence": false,
+        "strictExportPresence": undefined,
         "strictThisContextOnImports": false,
         "unknownContextCritical": true,
         "unknownContextRecursive": true,
@@ -1910,6 +1910,9 @@ Object {
 @@ ... @@
 -     "hashFunction": "md4",
 +     "hashFunction": "xxhash64",
+@@ ... @@
+-       "<cwd>/node_modules",
++       /^(.+?[\\\\/]node_modules[\\\\/])/,
 `)
 	);
 });
